@@ -19,6 +19,7 @@ iframe {
   border-radius: 10px;
   margin: 2rem 0rem;
 }
+
 .navbar {
   background-color: transparent;
   backdrop-filter: blur(10px);
