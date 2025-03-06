@@ -49,3 +49,12 @@ iframe {
 .dropdown-item {
   font-weight: bold;
 }
+.accordion-button {
+  background-color: rgb(153, 151, 151);
+  &:hover {
+    background-color: gray;
+  }
+}
+.accordion-item {
+  background-color: gray;
+}
