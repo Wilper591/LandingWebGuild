@@ -16,8 +16,9 @@ h2 {
   color: white;
 }
 iframe {
-  border-radius: 10px;
-  margin: 2rem 0rem;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
 }
 
 .navbar {
@@ -48,6 +49,95 @@ iframe {
 }
 .dropdown-item {
   font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: #1e293b;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 10px 0 30px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.build-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.build-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #374151;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.build-button.active {
+  background-color: #2563eb;
+}
+
+.build {
+  display: none;
+}
+
+.build.active {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #4b5563;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #374151;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px 6px 0 0;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #2563eb;
+}
+
+.tab:hover:not(.active) {
+  background-color: #4b5563;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.accordion-body iframe {
+  max-width: 50%;
+  margin: auto;
 }
 .accordion-button {
   background-color: rgb(153, 151, 151);

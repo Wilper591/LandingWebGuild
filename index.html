@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <script async src="https://questlog.gg/embed/tooltip.min.js"></script>
+    <script defer src="./assets/js/tag.js"></script>
   </head>
   <body>
     <header id="inicio">
@@ -174,33 +175,90 @@
     </header>
     <main>
       <section id="builds">
-        <h1 class="text-center m-2">
-          <a
-            target="_blank"
-            class="text-white"
-            href="https://questlog.gg/throne-and-liberty/sa/character-builder/RiotMysteryNavigate"
-            >Build Healer Varita-Baculo T2</a
-          >
-        </h1>
-        <div class="build-container">
-          <h2>Equipamiento</h2>
-          <iframe
-            loading="lazy"
-            style="width: 100%; height: 960px"
-            src="https://questlog.gg/throne-and-liberty/sa/embed/character-builder/equipment?id=RiotMysteryNavigate&build-id=2878738"
-          ></iframe>
-          <h2>Habilidades</h2>
-          <iframe
-            loading="lazy"
-            style="width: 100%; height: 140px"
-            src="https://questlog.gg/throne-and-liberty/sa/embed/skill-builder/skills?id=VnEjK7ME9Gx4&build-id=226837"
-          ></iframe>
-          <h2>Maestrias</h2>
-          <iframe
-            loading="lazy"
-            style="width: 100%; height: 400px"
-            src="https://questlog.gg/throne-and-liberty/sa/embed/skill-builder/weapon-mastery?id=VnEjK7ME9Gx4&build-id=226837"
-          ></iframe>
+        <div class="container">
+          <h1>Builds de Throne and Liberty</h1>
+
+          <div class="build-selector">
+            <button class="build-button active" data-build="build1">
+              Varita-Baculo
+            </button>
+            <button class="build-button" data-build="build2">Daga-Lanza</button>
+            <!-- Añade más botones aquí para más builds -->
+          </div>
+
+          <div id="build1" class="build active">
+            <div class="tabs">
+              <button class="tab active" data-tab="equipamiento1">
+                Equipamiento
+              </button>
+              <button class="tab" data-tab="habilidades1">Habilidades</button>
+              <button class="tab" data-tab="maestrias1">Maestrias</button>
+            </div>
+
+            <div id="equipamiento1" class="tab-content active">
+              <iframe
+                loading="lazy"
+                style="height: 960px"
+                src="https://questlog.gg/throne-and-liberty/sa/embed/character-builder/equipment?id=RiotMysteryNavigate&build-id=2878738"
+                title="Equipamiento Build 1"
+              ></iframe>
+            </div>
+
+            <div id="habilidades1" class="tab-content">
+              <iframe
+                loading="lazy"
+                style="height: 140px"
+                src="https://questlog.gg/throne-and-liberty/sa/embed/skill-builder/skills?id=VnEjK7ME9Gx4&build-id=226837"
+                title="Habilidades Build 1"
+              ></iframe>
+            </div>
+
+            <div id="maestrias1" class="tab-content">
+              <iframe
+                loading="lazy"
+                style="height: 400px"
+                src="https://questlog.gg/throne-and-liberty/sa/embed/skill-builder/weapon-mastery?id=VnEjK7ME9Gx4&build-id=226837"
+                title="Maestrias Build 1"
+              ></iframe>
+            </div>
+          </div>
+
+          <div id="build2" class="build">
+            <div class="tabs">
+              <button class="tab active" data-tab="equipamiento2">
+                Equipamiento
+              </button>
+              <button class="tab" data-tab="habilidades2">Habilidades</button>
+              <button class="tab" data-tab="maestrias2">Maestrias</button>
+            </div>
+
+            <div id="equipamiento2" class="tab-content active">
+              <iframe
+                loading="lazy"
+                style="height: 960px"
+                src="https://questlog.gg/throne-and-liberty/sa/embed/character-builder/equipment?id=RiotMysteryNavigate&build-id=2878738"
+                title="Equipamiento Build 2"
+              ></iframe>
+            </div>
+
+            <div id="habilidades2" class="tab-content">
+              <iframe
+                loading="lazy"
+                style="height: 140px"
+                src="https://questlog.gg/throne-and-liberty/sa/embed/skill-builder/skills?id=VnEjK7ME9Gx4&build-id=226837"
+                title="Habilidades Build 2"
+              ></iframe>
+            </div>
+
+            <div id="maestrias2" class="tab-content">
+              <iframe
+                loading="lazy"
+                style="height: 400px"
+                src="https://questlog.gg/throne-and-liberty/sa/embed/skill-builder/weapon-mastery?id=VnEjK7ME9Gx4&build-id=226837"
+                title="Maestrias Build 2"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Seccion de Guias -->
